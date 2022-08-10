@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    overflow: hidden;
+}
+
+
+.trees{
+    height: 100vh;
+    width : 100%;
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/06/Jungle-Photos-HD.jpg);
+    background-size: cover;
+    position: absolute;
+    top: -4px;
+    
+
+
+}
+.track{
+
+    height: 60vh;
+    width: 800vw;
+    background-image: url(track.png);
+    background-repeat:  repeat-x;
+    position: absolute;
+    bottom: -226px;
+    
+    animation:carMove linear 20s infinite;
+    
+}
+.car{
+    height: 130px;
+    width :439px;
+    background-image: url(car_body.png);
+    background-size: cover;
+    background-repeat:  no-repeat;
+    position: absolute;
+    bottom: 98px;
+    left: 225px;
+    animation:carshake linear .8s infinite;
+
+    
+}
+
+.wheel1 img{
+    width: 88px;
+    position: relative;
+    top: 47px;
+    left: 54px;
+    animation:wheelRotation linear .8s infinite;
+
+}
+.wheel2 img{
+    width: 90px;
+    position: relative;
+    top: -45px;
+    left: 283px;
+
+}
+@keyframes wheelRotation {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+@keyframes carMove {
+    100%{
+        transform: translateX(-500vw);
+    }
+    
+}
+@keyframes carshake {
+    0%{
+        transform: translatey(-6px);
+    }
+    50%{
+        transform: translatey(4px);
+    }
+    100%{
+        transform: translatey(-4px);
+    }
+}
