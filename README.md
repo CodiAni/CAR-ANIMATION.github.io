@@ -1,2 +1,4 @@
 # CAR-ANIMATION.github.io
-html , css, javascript
+It's a NOrmal animation project made with basic html,css and little js.
+
+more update is needed for completion.
